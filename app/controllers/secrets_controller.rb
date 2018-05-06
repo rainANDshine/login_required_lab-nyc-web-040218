@@ -6,6 +6,6 @@ class SecretsController < ApplicationController
 
   private
   def require_login
-    return login_path unless session.include? :name
+    redirect_to login_path unless session.include? :name
   end
 end
