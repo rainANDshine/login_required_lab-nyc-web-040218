@@ -1,0 +1,2 @@
+class SecrectsController < ApplicationController
+end
