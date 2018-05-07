@@ -1,5 +1,5 @@
 <%= "Hi, #{session[:name]}" %>
-<%= form_tag login_path, method: 'delete' do %>
+<%= form_tag '/logout', method: 'delete' do %>
   <%= submit_tag "delete" %>
 <% end %>
 <%= link_to 'Click to show your serect name', secret_name_path %>
