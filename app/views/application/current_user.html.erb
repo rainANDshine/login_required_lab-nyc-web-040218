@@ -1,4 +1,4 @@
-<%= "Hi, #{@request.session[:name]}" %>
+<%= "Hi, #{session[:name]}" %>
 <%= form_tag login_path, method: 'delete' do %>
   <%= submit_tag "delete" %>
 <% end %>
